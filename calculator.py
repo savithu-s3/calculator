@@ -25,6 +25,8 @@ def process():
     type = input("What type of calculator do you need (Enter a number from above) : ")
 
     def jump_process():
+        time.sleep(5)
+        input("Press any key to continue...")
         process()
 
     # |----------------AREA SUBFUNCTIONS---------------|
@@ -38,8 +40,6 @@ def process():
             side_len = int(side_len)
             sq_ar = side_len*side_len
             print("Area of square : ", sq_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -55,8 +55,6 @@ def process():
             rect_bread = int(rect_bread)
             rec_ar = rect_bread*rect_len
             print(rec_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -73,8 +71,6 @@ def process():
                 pi = 22/7
             cir_ar = pi*radius*radius
             print(cir_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -89,8 +85,6 @@ def process():
             height = int(height)
             tri_ar = (base*height)/2
             print(tri_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -104,8 +98,6 @@ def process():
             hex_ar = ((3*(3**0.5))/2)*(hex_len**2)
             hex_ar = round(hex_ar, 2)
             print(hex_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -119,8 +111,6 @@ def process():
             pen_ar = (1/4)*((5*(5+2*(5**0.5)))**0.5)*(pen_len**2)
             pen_ar = round(pen_ar, 2)
             print(pen_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -138,8 +128,6 @@ def process():
             oval_ar = pi*radius1*radius2
             oval_ar = round(oval_ar, 2)
             print(oval_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -188,8 +176,6 @@ def process():
             side_leng = int(side_leng)
             cube_ar = (side_leng*side_leng)*6
             print(cube_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -207,8 +193,6 @@ def process():
             height = int(height)
             cuboid_ar = ((length*height)*2) + ((breadth*height)*2) + ((length*breadth)*2)
             print(cuboid_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -225,8 +209,6 @@ def process():
                 pi = 22/7
             ball_ar = (4*pi*radius*radius)
             print(ball_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -247,8 +229,6 @@ def process():
             breadth = 2*pi*radius
             cylinder_ar = (height*breadth) + circ_ar
             print(cylinder_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -264,8 +244,6 @@ def process():
             tri_ar = (height*base)/2
             tetra_ar = tri_ar*4
             print(tetra_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -281,8 +259,6 @@ def process():
             tri_ar = ((height*base)/2)*4
             pyr_ar = (base*base) + tri_ar
             print(pyr_ar)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -328,8 +304,6 @@ def process():
             side_length = int(side_length)
             per_sq = side_length*4
             print(per_sq)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -344,8 +318,6 @@ def process():
             breadth = int(breadth)
             per_rec = (length*2) + (breadth*2)
             print(per_rec)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -362,8 +334,6 @@ def process():
                 pi = 22/7
             per_circ = (2*pi*radius)
             print(per_circ)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -380,8 +350,6 @@ def process():
             per_oval = 2*pi*(((radius1**2 + radius2**2)/2)**0.5)
             per_oval = round(per_oval, 2)
             print(per_oval)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -394,8 +362,6 @@ def process():
             side_length = int(side_length)
             per_tri = side_length*3
             print(per_tri)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -408,8 +374,6 @@ def process():
             side_length = int(side_length)
             per_pent = side_length*5
             print(per_pent)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -422,8 +386,6 @@ def process():
             side_length = int(side_length)
             per_hex = side_length*6
             print(per_hex)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -439,8 +401,6 @@ def process():
             side_length = int(side_length)
             vol_cube = side_length**3
             print(vol_cube)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -457,8 +417,6 @@ def process():
             height = int(height)
             vol_cuboid = length*breadth*height
             print(vol_cuboid)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -473,8 +431,6 @@ def process():
             vol_ball = (4/3)*pi*(radius**3)
             vol_ball = round(vol_ball, 2)
             print(vol_ball)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -488,8 +444,6 @@ def process():
             vol_tetra = side_length**3/((2**0.5)*6)
             vol_tetra = round(vol_tetra, 2)
             print(vol_tetra)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -507,8 +461,6 @@ def process():
             vol_pyr = (1/3)*((length*width)*height)
             vol_pyr = round(vol_pyr, 2)
             print(vol_pyr)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -525,8 +477,6 @@ def process():
             vol_cyl = pi*(radius**2)*height
             vol_cyl = round(vol_cyl, 2)
             print(vol_cyl)
-            time.sleep(5)
-            input("Press any key to continue...")
             jump_process()
         else:
             print("Please enter only numbers!")
