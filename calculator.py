@@ -17,9 +17,12 @@ def process():
     print("-------------------------------------------------")
 
     print("""
+    
     Area = 1
     Perimeter & Circumference = 2
     Volume = 3
+
+    Exit = Exit
     """)
 
     type = input("What type of calculator do you need (Enter a number from above) : ")
@@ -28,6 +31,11 @@ def process():
         time.sleep(5)
         input("Press any key to continue...")
         process()
+    
+    def exit_process():
+        print("Exiting in 3 seconds")
+        time.sleep(3)
+        exit()
 
     # |----------------AREA SUBFUNCTIONS---------------|
 
@@ -137,6 +145,7 @@ def process():
 
     def area_shapes():
         print("""
+        
         -Area Of Shapes-
         Square = 1
         Rectangle = 2
@@ -145,6 +154,9 @@ def process():
         Oval = 5
         Regualar Hexagon = 6
         Regualar Pentagon = 7
+
+        Exit = Exit
+
         """)
 
         shape_area = input("Enter the number of a shape from above : ")
@@ -163,6 +175,8 @@ def process():
             hexagon_area()
         elif (shape_area == "7"):
             pentagon_area()
+        elif (shape_area == "Exit" or shape_area == "exit" or shape_area == "EXIT" or shape_area == "eXIT"):
+            exit_process()
         else:
             print("You entered an incorrect value")
             area_shapes()
@@ -268,6 +282,7 @@ def process():
 
     def area_solids():
         print("""
+        
         -Area Of Solids-
         Cube = 1
         Cuboid = 2
@@ -275,6 +290,9 @@ def process():
         Cylinder = 4
         Tetrahedron = 5
         Pyramid = 6
+
+        Exit = Exit
+
         """)
 
         solid_area = input("Enter the number of a solid from above : ")
@@ -291,6 +309,8 @@ def process():
             tetrahedron_area()
         elif (solid_area == "6"):
             pyramid_area()
+        elif (solid_area == "Exit" or solid_area == "exit" or solid_area == "EXIT" or solid_area == "eXIT"):
+            exit_process()
         else:
             print("You entered an incorrect value")
             area_solids()
@@ -487,9 +507,13 @@ def process():
     # AREA FUNCTION
     def area():
         print("""
+        
         -Area-
         Shapes = 1
         Solids = 2
+
+        Exit = Exit
+
         """)
         
         area_sel = input("Area of Shapes or Solids (Enter a number from above) : ")
@@ -498,13 +522,16 @@ def process():
             area_shapes()
         elif (area_sel == "2"):
             area_solids()
+        elif (area_sel == "Exit" or area_sel == "exit" or area_sel == "EXIT" or area_sel == "eXIT"):
+            exit_process()
         else:
             print("You entered an incorrect value")
             area()
 
     # PERIMETER FUNCTION
-    def perimter():
+    def perimeter():
         print("""
+        
         -Perimeter & Circumference-
         Square = 1
         Rectangle = 2
@@ -513,6 +540,9 @@ def process():
         Equilateral Triangle = 5
         Regular Pentagon = 6
         Regular Hexagon = 7
+
+        Exit = Exit
+
         """)
 
         perimeter_sel = input("Enter the number of a Shape from above : ")
@@ -531,13 +561,16 @@ def process():
             pentagon_perimeter()
         elif (perimeter_sel == "7"):
             hexagon_perimeter()
+        elif (perimeter_sel == "Exit" or perimeter_sel == "exit" or perimeter_sel == "EXIT" or perimeter_sel == "eXIT"):
+            exit_process()
         else:
             print("You entered an incorrect value")
-            perimter()
+            perimeter()
 
     # VOLUME FUNCTION
     def volume():
         print("""
+        
         -Volume-
         Cube = 1
         Cuboid = 2
@@ -545,6 +578,9 @@ def process():
         Tetrahedron = 4
         Pyramid = 5
         Cylinder = 6
+
+        Exit = Exit
+        
         """)
 
         volume_sel = input("Enter the number of a Solid from above : ")
@@ -561,6 +597,8 @@ def process():
             pyramid_volume()
         elif (volume_sel == "6"):
             cylinder_volume()
+        elif (volume_sel == "Exit" or volume_sel == "exit" or volume_sel == "EXIT" or volume_sel == "eXIT"):
+            exit_process()
         else:
             print("You entered an incorrect value")
             volume()
@@ -568,8 +606,14 @@ def process():
     if (type == "1"):
         area()
     elif (type == "2"):
-        perimter()
+        perimeter()
     elif (type == "3"):
         volume()
+    elif (type == "Exit" or type == "exit" or type == "EXIT" or type == "eXIT"):
+        exit_process()
+    else:
+        print("You entered an incorrect value")
+        time.sleep(2)
+        process()
 
 process()
