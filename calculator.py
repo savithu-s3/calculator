@@ -62,7 +62,7 @@ def process():
             rect_len = int(rect_len)
             rect_bread = int(rect_bread)
             rec_ar = rect_bread*rect_len
-            print(rec_ar)
+            print("Area of rectangle : ", rec_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -78,7 +78,7 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             cir_ar = pi*radius*radius
-            print(cir_ar)
+            print("Area of circle : ", cir_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -92,7 +92,7 @@ def process():
             base = int(base)
             height = int(height)
             tri_ar = (base*height)/2
-            print(tri_ar)
+            print("Area of triangle : ", tri_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -105,7 +105,7 @@ def process():
             hex_len = int(hex_len)
             hex_ar = ((3*(3**0.5))/2)*(hex_len**2)
             hex_ar = round(hex_ar, 2)
-            print(hex_ar)
+            print("Area of hexagon : ", hex_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -118,7 +118,7 @@ def process():
             pen_len = int(pen_len)
             pen_ar = (1/4)*((5*(5+2*(5**0.5)))**0.5)*(pen_len**2)
             pen_ar = round(pen_ar, 2)
-            print(pen_ar)
+            print("Area of pentagon : ", pen_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -135,7 +135,7 @@ def process():
             pi = 3.14
             oval_ar = pi*radius1*radius2
             oval_ar = round(oval_ar, 2)
-            print(oval_ar)
+            print("Area of oval : ", oval_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -189,7 +189,7 @@ def process():
         if side_leng.isnumeric():
             side_leng = int(side_leng)
             cube_ar = (side_leng*side_leng)*6
-            print(cube_ar)
+            print("Area of cube : ", cube_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -206,7 +206,7 @@ def process():
             breadth = int(breadth)
             height = int(height)
             cuboid_ar = ((length*height)*2) + ((breadth*height)*2) + ((length*breadth)*2)
-            print(cuboid_ar)
+            print("Area of cuboid : ", cuboid_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -222,7 +222,7 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             ball_ar = (4*pi*radius*radius)
-            print(ball_ar)
+            print("Area of ball : ", ball_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -242,7 +242,7 @@ def process():
             circ_ar = (pi*radius*radius)*2
             breadth = 2*pi*radius
             cylinder_ar = (height*breadth) + circ_ar
-            print(cylinder_ar)
+            print("Area of cylinder : ", cylinder_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -257,7 +257,7 @@ def process():
             base = int(base)
             tri_ar = (height*base)/2
             tetra_ar = tri_ar*4
-            print(tetra_ar)
+            print("Area of tetrahedron : ", tetra_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -272,7 +272,7 @@ def process():
             base = int(base)
             tri_ar = ((height*base)/2)*4
             pyr_ar = (base*base) + tri_ar
-            print(pyr_ar)
+            print("Area of pyramid : ", pyr_ar)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -323,7 +323,7 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_sq = side_length*4
-            print(per_sq)
+            print("Perimeter of square : ", per_sq)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -337,7 +337,7 @@ def process():
             length = int(length)
             breadth = int(breadth)
             per_rec = (length*2) + (breadth*2)
-            print(per_rec)
+            print("Perimeter of rectangle : ", per_rec)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -353,7 +353,7 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             per_circ = (2*pi*radius)
-            print(per_circ)
+            print("Circumference of circle : ", per_circ)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -369,7 +369,7 @@ def process():
             pi = 3.14
             per_oval = 2*pi*(((radius1**2 + radius2**2)/2)**0.5)
             per_oval = round(per_oval, 2)
-            print(per_oval)
+            print("Circumference of oval : ", per_oval)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -381,7 +381,7 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_tri = side_length*3
-            print(per_tri)
+            print("Perimeter of Triangle : ", per_tri)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -393,7 +393,7 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_pent = side_length*5
-            print(per_pent)
+            print("Perimeter of pentagon : ", per_pent)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -405,7 +405,7 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_hex = side_length*6
-            print(per_hex)
+            print("Perimeter of Hexagon : ", per_hex)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -420,7 +420,7 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             vol_cube = side_length**3
-            print(vol_cube)
+            print("Volume of cube : ", vol_cube)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -436,7 +436,7 @@ def process():
             breadth = int(breadth)
             height = int(height)
             vol_cuboid = length*breadth*height
-            print(vol_cuboid)
+            print("Volume of cuboid : ", vol_cuboid)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -450,7 +450,7 @@ def process():
             pi = 3.14
             vol_ball = (4/3)*pi*(radius**3)
             vol_ball = round(vol_ball, 2)
-            print(vol_ball)
+            print("Volume of ball : ", vol_ball)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -463,7 +463,7 @@ def process():
             side_length = int(side_length)
             vol_tetra = side_length**3/((2**0.5)*6)
             vol_tetra = round(vol_tetra, 2)
-            print(vol_tetra)
+            print("Volume of tetrahedron : ", vol_tetra)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -480,7 +480,7 @@ def process():
             height = int(height)
             vol_pyr = (1/3)*((length*width)*height)
             vol_pyr = round(vol_pyr, 2)
-            print(vol_pyr)
+            print("Volume of pyramid : ", vol_pyr)
             jump_process()
         else:
             print("Please enter only numbers!")
@@ -496,7 +496,7 @@ def process():
             pi = 3.14
             vol_cyl = pi*(radius**2)*height
             vol_cyl = round(vol_cyl, 2)
-            print(vol_cyl)
+            print("Volume of cylinder : ", vol_cyl)
             jump_process()
         else:
             print("Please enter only numbers!")
