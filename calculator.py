@@ -1,4 +1,5 @@
 import time
+import os
 def process():
     print("""
      _     _ _                     ______      _ 
@@ -27,6 +28,12 @@ def process():
 
     type = input("What type of calculator do you need (Enter a number from above) : ")
 
+    def clear_terminal():
+        if os.name == "nt":
+            os.system("cls")
+        else:
+            os.system("clear")
+
     def jump_process():
         time.sleep(5)
         input("Press any key to continue...")
@@ -43,6 +50,7 @@ def process():
 
     # 1 Square
     def square_area():
+        clear_terminal()
         side_len = input("Enter the side length : ")
         if side_len.isnumeric():
             side_len = int(side_len)
@@ -56,6 +64,7 @@ def process():
 
     # 2 Rectangle
     def rectangle_area():
+        clear_terminal()
         rect_len = input("Enter length : ")
         rect_bread = input("Enter breadth : ")
         if (rect_len.isnumeric()) and (rect_bread.isnumeric()):
@@ -70,6 +79,7 @@ def process():
 
     # 3 Circle
     def circle_area():
+        clear_terminal()
         radius = input("Enter radius : ")
         if radius.isnumeric():
             radius = int(radius)
@@ -86,6 +96,7 @@ def process():
 
     # 4 Triangle
     def triangle_area():
+        clear_terminal()
         base = input("Enter base length : ")
         height = input("Enter perpendicular height : ")
         if (base.isnumeric()) and (height.isnumeric()):
@@ -100,6 +111,7 @@ def process():
 
     # 5 Hexagon
     def hexagon_area():
+        clear_terminal()
         hex_len = input("Enter length of a side : ")
         if hex_len.isnumeric():
             hex_len = int(hex_len)
@@ -113,6 +125,7 @@ def process():
 
     # 6 Pentagon
     def pentagon_area():
+        clear_terminal()
         pen_len = input("Enter length of a side : ")
         if pen_len.isnumeric():
             pen_len = int(pen_len)
@@ -127,6 +140,7 @@ def process():
 
     # 7 Oval
     def oval_area():
+        clear_terminal()
         radius1 = input("Enter radius 1 : ")
         radius2 = input("Enter radius 2 : ")
         if (radius1.isnumeric()) and (radius2.isnumeric()):
@@ -144,6 +158,7 @@ def process():
     # AREA OF SHAPES - SELECTOR
 
     def area_shapes():
+        clear_terminal()
         print("""
         
         -Area Of Shapes-
@@ -185,6 +200,7 @@ def process():
 
     # 1 Cube
     def cube_area():
+        clear_terminal()
         side_leng = input("Enter side Length : ")
         if side_leng.isnumeric():
             side_leng = int(side_leng)
@@ -198,6 +214,7 @@ def process():
 
     # 2 Cuboid
     def cuboid_area():
+        clear_terminal()
         length = input("Enter side Length : ")
         breadth = input("Enter Breadth : ")
         height = input("Enter Height : ")
@@ -214,6 +231,7 @@ def process():
 
     # 3 Ball
     def ball_area():
+        clear_terminal()
         radius = input("Enter the radius : ")
         if radius.isnumeric():
             radius = int(radius)
@@ -230,6 +248,7 @@ def process():
 
     # 4 Cylinder
     def cylinder_area():
+        clear_terminal()
         radius = input("Enter the radius of a circle : ")
         height = input("Enter the height of the cylinder : ")
         if (radius.isnumeric()) and (height.isnumeric()):
@@ -250,6 +269,7 @@ def process():
 
     # 5 Tetrahedron
     def tetrahedron_area():
+        clear_terminal()
         height = input("Enter the perpendicular height of a triangle : ")
         base = input("Enter the base length of a triangle : ")
         if (height.isnumeric()) and (base.isnumeric()):
@@ -265,6 +285,7 @@ def process():
 
     # 6 Pyramid
     def pyramid_area():
+        clear_terminal()
         height = input("Enter the perpendicular height of a triangle : ")
         base = input("Enter the base length of a triangle : ")
         if (height.isnumeric()) and (base.isnumeric()):
@@ -281,6 +302,7 @@ def process():
     # AREA OF SOLIDS - SELECTOR
 
     def area_solids():
+        clear_terminal()
         print("""
         
         -Area Of Solids-
@@ -319,6 +341,7 @@ def process():
 
     # 1 Square
     def square_perimeter():
+        clear_terminal()
         side_length = input("Enter side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -331,6 +354,7 @@ def process():
 
     # 2 Rectangle
     def rectangle_perimeter():
+        clear_terminal()
         length = input("Enter the length : ")
         breadth = input("Enter the breadth : ")
         if (length.isnumeric()) and (breadth.isnumeric()):
@@ -345,6 +369,7 @@ def process():
 
     # 3 Circle
     def circle_perimeter():
+        clear_terminal()
         radius = input("Enter the radius : ")
         if radius.isnumeric():
             radius = int(radius)
@@ -361,6 +386,7 @@ def process():
 
     # 4 Oval
     def oval_perimeter():
+        clear_terminal()
         radius1 = input("Enter radius 1 : ")
         radius2 = input("Enter radius 2 : ")
         if (radius1.isnumeric()) and (radius2.isnumeric()):
@@ -377,6 +403,7 @@ def process():
 
     # 5 Equilateral Triangle
     def triangle_perimeter():
+        clear_terminal()
         side_length = input("Enter the side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -389,6 +416,7 @@ def process():
 
     # 6 Regular Pentagon
     def pentagon_perimeter():
+        clear_terminal()
         side_length = input("Enter the side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -401,6 +429,7 @@ def process():
 
     # 7 Regular Hexagon
     def hexagon_perimeter():
+        clear_terminal()
         side_length = input("Enter the side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -416,6 +445,7 @@ def process():
 
     # 1 Cube
     def cube_volume():
+        clear_terminal()
         side_length = input("Enter the side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -428,6 +458,7 @@ def process():
 
     # 2 Cuboid
     def cuboid_volume():
+        clear_terminal()
         length = input("Enter the length : ")
         breadth = input("Enter the breadth : ")
         height = input("Enter the height : ")
@@ -444,6 +475,7 @@ def process():
 
     # 3 Ball
     def ball_volume():
+        clear_terminal()
         radius = input("Enter the radius : ")
         if radius.isnumeric():
             radius = int(radius)
@@ -458,6 +490,7 @@ def process():
 
     # 4 Tetrahedron
     def tetrahedron_volume():
+        clear_terminal()
         side_length = input("Enter the side length : ")
         if side_length.isnumeric():
             side_length = int(side_length)
@@ -471,6 +504,7 @@ def process():
 
     # 5 Pyramid
     def pyramid_volume():
+        clear_terminal()
         length = input("Enter the length : ")
         width = input("Enter the width : ")
         height = input("Enter the perpendicular height : ")
@@ -488,6 +522,7 @@ def process():
 
     # 6 Cylinder
     def cylinder_volume():
+        clear_terminal()
         radius = input("Enter the radius of a circle : ")
         height = input("Enter the height : ")
         if (radius.isnumeric()) and (height.isnumeric()):
@@ -506,6 +541,7 @@ def process():
 
     # AREA FUNCTION
     def area():
+        clear_terminal()
         print("""
         
         -Area-
@@ -530,6 +566,7 @@ def process():
 
     # PERIMETER FUNCTION
     def perimeter():
+        clear_terminal()
         print("""
         
         -Perimeter & Circumference-
@@ -569,6 +606,7 @@ def process():
 
     # VOLUME FUNCTION
     def volume():
+        clear_terminal()
         print("""
         
         -Volume-
