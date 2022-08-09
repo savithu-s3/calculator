@@ -13,13 +13,18 @@ to run the program in windows diretly. If you have python installed in your comp
 👆Click above to open github repo👆
 
 ---
-### ```Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon.```
+### ```Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon. Always run the python🐍 code from the releases for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!). ```
 
 ---
 
-### [✌️Post a comment on the discussion👍](https://github.com/savithu-s3/calculator/discussions)
+To clone repo run 👇
+```
+git clone "https://github.com/savithu-s3/calculator.git"
+```
 
 # ```Links```👇
+
+>[✌️Post a comment on the discussion👍](https://github.com/savithu-s3/calculator/discussions)
 
 ### Github
 
