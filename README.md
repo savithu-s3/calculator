@@ -1,4 +1,4 @@
-# ```Ultra Cal```🧮
+<h1 align="center" style="color:#F9C669"><font face="CaskaydiaCove NF">Ultra Cal</font>🧮</h1>
 
 ## Calculate **_Volume_, _Area_ and _Perimeter_**
 
@@ -13,7 +13,7 @@ to run the program in windows diretly. If you have python installed in your comp
 👆Click above to open github repo👆
 
 ---
-### ```Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon. Always run the python🐍 code from the releases for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!). ```
+<p align="center" style="color:#F9C669"><font size="3" face="CaskaydiaCove NF">Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon. Always run the python🐍 code or the .exe📄 from the releases✅ for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!).</font></p>
 
 ---
 
@@ -22,25 +22,74 @@ To clone repo run 👇
 git clone "https://github.com/savithu-s3/calculator.git"
 ```
 
-# ```Links```👇
+# <font style="color:#F9C669" face="CaskaydiaCove NF">Features</font>📃
 
->[✌️Post a comment on the discussion👍](https://github.com/savithu-s3/calculator/discussions)
+1. <font size="4">Can calculate,</font>
+- Area
+  - Shapes
+    - Square
+    - Rectangle
+    - Circle
+    - Triangle
+    - Hexagon
+    - Pentagon
+    - Oval
+  - Solids
+    - Cube
+    - Cuboid
+    - Ball
+    - Cylinder
+    - Tetrahedron
+    - Pyramid
+- Perimeter
+  - Square
+  - Rectangle
+  - Circle
+  - Oval
+  - Equilateral Triangle
+  - Regular Pentagon
+  - Regular Hexagon
+- Volume
+  - Cube
+  - Cuboid
+  - Ball
+  - Tetrahedron
+  - Pyramid
+  - Cylinder
 
-### Github
+2. <font size="4">Automatically clear screen on a new function</font>
+3. <font size="4">Exit from anywhere</font>
+4. <font size="4">Can only input numerical values</font>
 
-- [My Profile](https://github.com/savithu-s3)
-- [Calculator repo](https://github.com/savithu-s3/calculator)
+<font face="CaskaydiaCove NF">More features coming soon...!</font>
 
-### Social Media 👥
+# <font style="color:#F9C669" face="CaskaydiaCove NF">Links</font>👇
 
->[Instagram 📷](https://instagram.com/Savithu_s3)
+- Python File (repo)👇
 
->[Twitter 🐤](https://twitter.com/savithu_s3)
+  - ```https://github.com/savithu-s3/calculator/blob/main/calculator.py```
 
->[Reddit 🙂](https://www.reddit.com/user/Savithu_s3)
+---
 
->[Telegram 🚀](https://t.me/savithu_s3)
+- >[✌️Post a comment on the discussion👍](https://github.com/savithu-s3/calculator/discussions)
 
->[Discord 😶](https://discord.com/users/852854232435916800)
+---
+
+- ### Github
+
+  - [My Profile](https://github.com/savithu-s3)
+  - [Calculator repo](https://github.com/savithu-s3/calculator)
+
+- ### Social Media 👥
+
+  - >[Instagram 📷](https://instagram.com/Savithu_s3)
+
+  - >[Twitter 🐤](https://twitter.com/savithu_s3)
+
+  - >[Reddit 🙂](https://www.reddit.com/user/Savithu_s3)
+
+  - >[Telegram 🚀](https://t.me/savithu_s3)
+
+  - >[Discord 😶](https://discord.com/users/852854232435916800)
 
 
