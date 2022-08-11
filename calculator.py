@@ -28,6 +28,8 @@ def process():
 
     type = input("What type of calculator do you need (Enter a number from above) : ")
 
+    yes = ["Yes","yes","Y","y"]
+
     def clear_terminal():
         if os.name == "nt":
             os.system("cls")
@@ -56,7 +58,12 @@ def process():
             side_len = int(side_len)
             sq_ar = side_len*side_len
             print("Area of square : ", sq_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(sq_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             square_area()
@@ -72,7 +79,12 @@ def process():
             rect_bread = int(rect_bread)
             rec_ar = rect_bread*rect_len
             print("Area of rectangle : ", rec_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(rec_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             rectangle_area()
@@ -89,7 +101,12 @@ def process():
                 pi = 22/7
             cir_ar = pi*radius*radius
             print("Area of circle : ", cir_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(cir_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             circle_area()
@@ -104,7 +121,12 @@ def process():
             height = int(height)
             tri_ar = (base*height)/2
             print("Area of triangle : ", tri_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(tri_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             triangle_area()
@@ -118,7 +140,12 @@ def process():
             hex_ar = ((3*(3**0.5))/2)*(hex_len**2)
             hex_ar = round(hex_ar, 2)
             print("Area of hexagon : ", hex_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(hex_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             hexagon_area()
@@ -132,7 +159,12 @@ def process():
             pen_ar = (1/4)*((5*(5+2*(5**0.5)))**0.5)*(pen_len**2)
             pen_ar = round(pen_ar, 2)
             print("Area of pentagon : ", pen_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(pen_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             pentagon_area()
@@ -150,7 +182,12 @@ def process():
             oval_ar = pi*radius1*radius2
             oval_ar = round(oval_ar, 2)
             print("Area of oval : ", oval_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(oval_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             oval_area()
@@ -206,7 +243,12 @@ def process():
             side_leng = int(side_leng)
             cube_ar = (side_leng*side_leng)*6
             print("Area of cube : ", cube_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(cube_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cube_area()
@@ -224,7 +266,12 @@ def process():
             height = int(height)
             cuboid_ar = ((length*height)*2) + ((breadth*height)*2) + ((length*breadth)*2)
             print("Area of cuboid : ", cuboid_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(cuboid_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cuboid_area()
@@ -241,7 +288,12 @@ def process():
                 pi = 22/7
             ball_ar = (4*pi*radius*radius)
             print("Area of ball : ", ball_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(ball_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             ball_area()
@@ -262,7 +314,12 @@ def process():
             breadth = 2*pi*radius
             cylinder_ar = (height*breadth) + circ_ar
             print("Area of cylinder : ", cylinder_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(cylinder_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cylinder_area()
@@ -278,7 +335,12 @@ def process():
             tri_ar = (height*base)/2
             tetra_ar = tri_ar*4
             print("Area of tetrahedron : ", tetra_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(tetra_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             tetrahedron_area()
@@ -294,7 +356,12 @@ def process():
             tri_ar = ((height*base)/2)*4
             pyr_ar = (base*base) + tri_ar
             print("Area of pyramid : ", pyr_ar)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(pyr_ar)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             pyramid_area()
@@ -347,7 +414,12 @@ def process():
             side_length = int(side_length)
             per_sq = side_length*4
             print("Perimeter of square : ", per_sq)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_sq)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             square_perimeter()
@@ -362,7 +434,12 @@ def process():
             breadth = int(breadth)
             per_rec = (length*2) + (breadth*2)
             print("Perimeter of rectangle : ", per_rec)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_rec)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             rectangle_perimeter()
@@ -379,7 +456,12 @@ def process():
                 pi = 22/7
             per_circ = (2*pi*radius)
             print("Circumference of circle : ", per_circ)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_circ)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             circle_perimeter()
@@ -396,7 +478,12 @@ def process():
             per_oval = 2*pi*(((radius1**2 + radius2**2)/2)**0.5)
             per_oval = round(per_oval, 2)
             print("Circumference of oval : ", per_oval)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_oval)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             oval_perimeter()
@@ -409,7 +496,12 @@ def process():
             side_length = int(side_length)
             per_tri = side_length*3
             print("Perimeter of Triangle : ", per_tri)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_tri)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             triangle_perimeter()
@@ -422,7 +514,12 @@ def process():
             side_length = int(side_length)
             per_pent = side_length*5
             print("Perimeter of pentagon : ", per_pent)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_pent)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             pentagon_perimeter()
@@ -435,7 +532,12 @@ def process():
             side_length = int(side_length)
             per_hex = side_length*6
             print("Perimeter of Hexagon : ", per_hex)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(per_hex)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             hexagon_perimeter()
@@ -451,7 +553,12 @@ def process():
             side_length = int(side_length)
             vol_cube = side_length**3
             print("Volume of cube : ", vol_cube)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_cube)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cube_volume()
@@ -468,7 +575,12 @@ def process():
             height = int(height)
             vol_cuboid = length*breadth*height
             print("Volume of cuboid : ", vol_cuboid)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_cuboid)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cuboid_volume()
@@ -483,7 +595,12 @@ def process():
             vol_ball = (4/3)*pi*(radius**3)
             vol_ball = round(vol_ball, 2)
             print("Volume of ball : ", vol_ball)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_ball)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             ball_volume()
@@ -497,7 +614,12 @@ def process():
             vol_tetra = side_length**3/((2**0.5)*6)
             vol_tetra = round(vol_tetra, 2)
             print("Volume of tetrahedron : ", vol_tetra)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_tetra)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             tetrahedron_volume()
@@ -515,7 +637,12 @@ def process():
             vol_pyr = (1/3)*((length*width)*height)
             vol_pyr = round(vol_pyr, 2)
             print("Volume of pyramid : ", vol_pyr)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_pyr)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             pyramid_volume()
@@ -532,7 +659,12 @@ def process():
             vol_cyl = pi*(radius**2)*height
             vol_cyl = round(vol_cyl, 2)
             print("Volume of cylinder : ", vol_cyl)
-            jump_process()
+            copy = input("Do you need to copy the asnwer : ")
+            if copy in yes:
+                pyperclip.copy(vol_cyl)
+                print("Answer Copied...!!!")
+            else:
+                jump_process()
         else:
             print("Please enter only numbers!")
             cylinder_volume()
