@@ -18,7 +18,7 @@ def process():
     \_______|_|\___)_|   \_||_|   \______)_||_|_|
                                     BY SAVITHU_S3""")
     print("")
-    print("Ultra Cal - Version 1.6")
+    print("Ultra Cal🧮 - Version 1.6")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
