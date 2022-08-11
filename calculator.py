@@ -1,6 +1,14 @@
 import time
 import os
+
+def clear_terminal():
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
+
 def process():
+    clear_terminal()
     print("""
      _     _ _                     ______      _ 
     | |   | | |_                  / _____)    | |
@@ -18,26 +26,22 @@ def process():
     print("-------------------------------------------------")
 
     print("""
-    
-    Area = 1
-    Perimeter & Circumference = 2
-    Volume = 3
+    =================================
+      Area = 1
+      Perimeter & Circumference = 2
+      Volume = 3
+    =================================
 
     Exit = Exit
+
     """)
 
     type = input("What type of calculator do you need (Enter a number from above) : ")
 
     yes = ["Yes","yes","Y","y"]
 
-    def clear_terminal():
-        if os.name == "nt":
-            os.system("cls")
-        else:
-            os.system("clear")
-
     def jump_process():
-        time.sleep(5)
+        time.sleep(2)
         input("Press any key to continue...")
         process()
     
@@ -57,8 +61,10 @@ def process():
         if side_len.isnumeric():
             side_len = int(side_len)
             sq_ar = side_len*side_len
-            print("Area of square : ", sq_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of square : ", sq_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(sq_ar)
                 print("Answer Copied...!!!")
@@ -78,8 +84,10 @@ def process():
             rect_len = int(rect_len)
             rect_bread = int(rect_bread)
             rec_ar = rect_bread*rect_len
-            print("Area of rectangle : ", rec_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of rectangle : ", rec_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(rec_ar)
                 print("Answer Copied...!!!")
@@ -100,8 +108,10 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             cir_ar = pi*radius*radius
-            print("Area of circle : ", cir_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of circle : ", cir_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cir_ar)
                 print("Answer Copied...!!!")
@@ -120,8 +130,10 @@ def process():
             base = int(base)
             height = int(height)
             tri_ar = (base*height)/2
-            print("Area of triangle : ", tri_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of triangle : ", tri_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(tri_ar)
                 print("Answer Copied...!!!")
@@ -139,8 +151,10 @@ def process():
             hex_len = int(hex_len)
             hex_ar = ((3*(3**0.5))/2)*(hex_len**2)
             hex_ar = round(hex_ar, 2)
-            print("Area of hexagon : ", hex_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of hexagon : ", hex_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(hex_ar)
                 print("Answer Copied...!!!")
@@ -158,8 +172,10 @@ def process():
             pen_len = int(pen_len)
             pen_ar = (1/4)*((5*(5+2*(5**0.5)))**0.5)*(pen_len**2)
             pen_ar = round(pen_ar, 2)
-            print("Area of pentagon : ", pen_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of pentagon : ", pen_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(pen_ar)
                 print("Answer Copied...!!!")
@@ -181,8 +197,10 @@ def process():
             pi = 3.14
             oval_ar = pi*radius1*radius2
             oval_ar = round(oval_ar, 2)
-            print("Area of oval : ", oval_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of oval : ", oval_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(oval_ar)
                 print("Answer Copied...!!!")
@@ -197,8 +215,9 @@ def process():
     def area_shapes():
         clear_terminal()
         print("""
+        =================================
+        ----Area Of Shapes----
         
-        -Area Of Shapes-
         Square = 1
         Rectangle = 2
         Circle = 3
@@ -206,7 +225,8 @@ def process():
         Oval = 5
         Regualar Hexagon = 6
         Regualar Pentagon = 7
-
+        =================================
+        
         Exit = Exit
 
         """)
@@ -242,8 +262,10 @@ def process():
         if side_leng.isnumeric():
             side_leng = int(side_leng)
             cube_ar = (side_leng*side_leng)*6
-            print("Area of cube : ", cube_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of cube : ", cube_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cube_ar)
                 print("Answer Copied...!!!")
@@ -265,8 +287,10 @@ def process():
             breadth = int(breadth)
             height = int(height)
             cuboid_ar = ((length*height)*2) + ((breadth*height)*2) + ((length*breadth)*2)
-            print("Area of cuboid : ", cuboid_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of cuboid : ", cuboid_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cuboid_ar)
                 print("Answer Copied...!!!")
@@ -287,8 +311,10 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             ball_ar = (4*pi*radius*radius)
-            print("Area of ball : ", ball_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of ball : ", ball_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(ball_ar)
                 print("Answer Copied...!!!")
@@ -313,8 +339,10 @@ def process():
             circ_ar = (pi*radius*radius)*2
             breadth = 2*pi*radius
             cylinder_ar = (height*breadth) + circ_ar
-            print("Area of cylinder : ", cylinder_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of cylinder : ", cylinder_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cylinder_ar)
                 print("Answer Copied...!!!")
@@ -334,8 +362,10 @@ def process():
             base = int(base)
             tri_ar = (height*base)/2
             tetra_ar = tri_ar*4
-            print("Area of tetrahedron : ", tetra_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of tetrahedron : ", tetra_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(tetra_ar)
                 print("Answer Copied...!!!")
@@ -355,8 +385,10 @@ def process():
             base = int(base)
             tri_ar = ((height*base)/2)*4
             pyr_ar = (base*base) + tri_ar
-            print("Area of pyramid : ", pyr_ar)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Area of pyramid : ", pyr_ar, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(pyr_ar)
                 print("Answer Copied...!!!")
@@ -371,15 +403,17 @@ def process():
     def area_solids():
         clear_terminal()
         print("""
+        =================================
+        ----Area Of Solids----
         
-        -Area Of Solids-
         Cube = 1
         Cuboid = 2
         Ball = 3
         Cylinder = 4
         Tetrahedron = 5
         Pyramid = 6
-
+        =================================
+        
         Exit = Exit
 
         """)
@@ -413,8 +447,10 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_sq = side_length*4
-            print("Perimeter of square : ", per_sq)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Perimeter of square : ", per_sq, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_sq)
                 print("Answer Copied...!!!")
@@ -433,8 +469,10 @@ def process():
             length = int(length)
             breadth = int(breadth)
             per_rec = (length*2) + (breadth*2)
-            print("Perimeter of rectangle : ", per_rec)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Perimeter of rectangle : ", per_rec, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_rec)
                 print("Answer Copied...!!!")
@@ -455,8 +493,10 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             per_circ = (2*pi*radius)
-            print("Circumference of circle : ", per_circ)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Circumference of circle : ", per_circ, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_circ)
                 print("Answer Copied...!!!")
@@ -477,8 +517,10 @@ def process():
             pi = 3.14
             per_oval = 2*pi*(((radius1**2 + radius2**2)/2)**0.5)
             per_oval = round(per_oval, 2)
-            print("Circumference of oval : ", per_oval)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Circumference of oval : ", per_oval, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_oval)
                 print("Answer Copied...!!!")
@@ -495,8 +537,10 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_tri = side_length*3
-            print("Perimeter of Triangle : ", per_tri)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Perimeter of Triangle : ", per_tri, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_tri)
                 print("Answer Copied...!!!")
@@ -513,8 +557,10 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_pent = side_length*5
-            print("Perimeter of pentagon : ", per_pent)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Perimeter of pentagon : ", per_pent, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_pent)
                 print("Answer Copied...!!!")
@@ -531,8 +577,10 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_hex = side_length*6
-            print("Perimeter of Hexagon : ", per_hex)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Perimeter of Hexagon : ", per_hex, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_hex)
                 print("Answer Copied...!!!")
@@ -552,8 +600,10 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             vol_cube = side_length**3
-            print("Volume of cube : ", vol_cube)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of cube : ", vol_cube, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cube)
                 print("Answer Copied...!!!")
@@ -574,8 +624,10 @@ def process():
             breadth = int(breadth)
             height = int(height)
             vol_cuboid = length*breadth*height
-            print("Volume of cuboid : ", vol_cuboid)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of cuboid : ", vol_cuboid, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cuboid)
                 print("Answer Copied...!!!")
@@ -594,8 +646,10 @@ def process():
             pi = 3.14
             vol_ball = (4/3)*pi*(radius**3)
             vol_ball = round(vol_ball, 2)
-            print("Volume of ball : ", vol_ball)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of ball : ", vol_ball, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_ball)
                 print("Answer Copied...!!!")
@@ -613,8 +667,10 @@ def process():
             side_length = int(side_length)
             vol_tetra = side_length**3/((2**0.5)*6)
             vol_tetra = round(vol_tetra, 2)
-            print("Volume of tetrahedron : ", vol_tetra)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of tetrahedron : ", vol_tetra, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_tetra)
                 print("Answer Copied...!!!")
@@ -636,8 +692,10 @@ def process():
             height = int(height)
             vol_pyr = (1/3)*((length*width)*height)
             vol_pyr = round(vol_pyr, 2)
-            print("Volume of pyramid : ", vol_pyr)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of pyramid : ", vol_pyr, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_pyr)
                 print("Answer Copied...!!!")
@@ -658,8 +716,10 @@ def process():
             pi = 3.14
             vol_cyl = pi*(radius**2)*height
             vol_cyl = round(vol_cyl, 2)
-            print("Volume of cylinder : ", vol_cyl)
-            copy = input("Do you need to copy the asnwer : ")
+            print("---------------------------------------------------------")
+            print(">>> Volume of cylinder : ", vol_cyl, "<<<")
+            print("---------------------------------------------------------")
+            copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cyl)
                 print("Answer Copied...!!!")
@@ -675,10 +735,12 @@ def process():
     def area():
         clear_terminal()
         print("""
+        =================================
+        ----Area----
         
-        -Area-
         Shapes = 1
         Solids = 2
+        =================================
 
         Exit = Exit
 
@@ -700,8 +762,9 @@ def process():
     def perimeter():
         clear_terminal()
         print("""
+        =================================
+        ----Perimeter & Circumference----
         
-        -Perimeter & Circumference-
         Square = 1
         Rectangle = 2
         Circle = 3
@@ -709,7 +772,8 @@ def process():
         Equilateral Triangle = 5
         Regular Pentagon = 6
         Regular Hexagon = 7
-
+        =================================
+        
         Exit = Exit
 
         """)
@@ -740,15 +804,17 @@ def process():
     def volume():
         clear_terminal()
         print("""
+        =================================
+        ----Volume----
         
-        -Volume-
         Cube = 1
         Cuboid = 2
         Ball = 3
         Tetrahedron = 4
         Pyramid = 5
         Cylinder = 6
-
+        =================================
+        
         Exit = Exit
         
         """)
