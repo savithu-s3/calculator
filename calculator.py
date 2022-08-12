@@ -1,6 +1,9 @@
 import time
 import os
 
+history_file = "history.txt"
+current_time = time.asctime()
+
 def clear_terminal():
     if os.name == "nt":
         os.system("cls")
@@ -63,8 +66,13 @@ def process():
         if side_len.isnumeric():
             side_len = int(side_len)
             sq_ar = side_len*side_len
+            sq_ar = str(sq_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of square :  " + sq_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of square : ", sq_ar, "<<<")
+            print(">>> Area of square :  " + sq_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -86,8 +94,13 @@ def process():
             rect_len = int(rect_len)
             rect_bread = int(rect_bread)
             rec_ar = rect_bread*rect_len
+            rec_ar = str(rec_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of rectangle :  " + rec_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of rectangle : ", rec_ar, "<<<")
+            print(">>> Area of rectangle :  " + rec_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -110,8 +123,13 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             cir_ar = pi*radius*radius
+            cir_ar = str(cir_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + cir_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of circle : ", cir_ar, "<<<")
+            print(">>> Area of circle :  " + cir_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -132,8 +150,13 @@ def process():
             base = int(base)
             height = int(height)
             tri_ar = (base*height)/2
+            tri_ar = str(tri_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of triangle :  " + tri_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of triangle : ", tri_ar, "<<<")
+            print(">>> Area of triangle :  " + tri_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -153,8 +176,13 @@ def process():
             hex_len = int(hex_len)
             hex_ar = ((3*(3**0.5))/2)*(hex_len**2)
             hex_ar = round(hex_ar, 2)
+            hex_ar = str(hex_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of hexagon :  " + hex_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of hexagon : ", hex_ar, "<<<")
+            print(">>> Area of hexagon :  " + hex_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -174,8 +202,13 @@ def process():
             pen_len = int(pen_len)
             pen_ar = (1/4)*((5*(5+2*(5**0.5)))**0.5)*(pen_len**2)
             pen_ar = round(pen_ar, 2)
+            pen_ar = str(pen_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of pentagon :  " + pen_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of pentagon : ", pen_ar, "<<<")
+            print(">>> Area of pentagon :  " + pen_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -199,8 +232,13 @@ def process():
             pi = 3.14
             oval_ar = pi*radius1*radius2
             oval_ar = round(oval_ar, 2)
+            oval_ar = str(oval_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of oval :  " + oval_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of oval : ", oval_ar, "<<<")
+            print(">>> Area of oval :  " + oval_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -264,8 +302,13 @@ def process():
         if side_leng.isnumeric():
             side_leng = int(side_leng)
             cube_ar = (side_leng*side_leng)*6
+            cube_ar = str(cube_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of cube :  " + cube_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of cube : ", cube_ar, "<<<")
+            print(">>> Area of cube :  " + cube_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -289,8 +332,13 @@ def process():
             breadth = int(breadth)
             height = int(height)
             cuboid_ar = ((length*height)*2) + ((breadth*height)*2) + ((length*breadth)*2)
+            cuboid_ar = str(cuboid_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of cuboid :  " + cuboid_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of cuboid : ", cuboid_ar, "<<<")
+            print(">>> Area of cuboid :  " + cuboid_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -313,8 +361,13 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             ball_ar = (4*pi*radius*radius)
+            ball_ar = str(ball_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of ball :  " + ball_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of ball : ", ball_ar, "<<<")
+            print(">>> Area of ball :  " + ball_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -341,8 +394,13 @@ def process():
             circ_ar = (pi*radius*radius)*2
             breadth = 2*pi*radius
             cylinder_ar = (height*breadth) + circ_ar
+            cylinder_ar = str(cylinder_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of cylinder :  " + cylinder_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of cylinder : ", cylinder_ar, "<<<")
+            print(">>> Area of cylinder :  " + cylinder_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -364,8 +422,13 @@ def process():
             base = int(base)
             tri_ar = (height*base)/2
             tetra_ar = tri_ar*4
+            tetra_ar = str(tetra_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of tetrahedron :  " + tetra_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of tetrahedron : ", tetra_ar, "<<<")
+            print(">>> Area of tetrahedron :  " + tetra_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -387,8 +450,13 @@ def process():
             base = int(base)
             tri_ar = ((height*base)/2)*4
             pyr_ar = (base*base) + tri_ar
+            pyr_ar = str(pyr_ar)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Area of pyramid :  " + pyr_ar + "]")
             print("---------------------------------------------------------")
-            print(">>> Area of pyramid : ", pyr_ar, "<<<")
+            print(">>> Area of pyramid :  " + pyr_ar + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -449,8 +517,13 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_sq = side_length*4
+            per_sq = str(per_sq)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of square :  " + per_sq + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of square : ", per_sq, "<<<")
+            print(">>> Perimeter of square :  " + per_sq + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -471,8 +544,13 @@ def process():
             length = int(length)
             breadth = int(breadth)
             per_rec = (length*2) + (breadth*2)
+            per_rec = str(per_rec)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of rectangle :  " + per_rec + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of rectangle : ", per_rec, "<<<")
+            print(">>> Perimeter of rectangle :  " + per_rec + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -495,8 +573,13 @@ def process():
             if (mul_o_sev == 0):
                 pi = 22/7
             per_circ = (2*pi*radius)
+            per_circ = str(per_circ)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Circumference of circle :  " + per_circ + "]")
             print("---------------------------------------------------------")
-            print(">>> Circumference of circle : ", per_circ, "<<<")
+            print(">>> Circumference of circle :  " + per_circ + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -519,8 +602,13 @@ def process():
             pi = 3.14
             per_oval = 2*pi*(((radius1**2 + radius2**2)/2)**0.5)
             per_oval = round(per_oval, 2)
+            per_oval = str(per_oval)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Circumference of oval :  " + per_oval + "]")
             print("---------------------------------------------------------")
-            print(">>> Circumference of oval : ", per_oval, "<<<")
+            print(">>> Circumference of oval :  " + per_oval + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -539,8 +627,13 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_tri = side_length*3
+            per_tri = str(per_tri)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of Triangle :  " + per_tri + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of Triangle : ", per_tri, "<<<")
+            print(">>> Perimeter of Triangle :  " + per_tri + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -559,8 +652,13 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_pent = side_length*5
+            per_pent = str(per_pent)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of pentagon :  " + per_pent + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of pentagon : ", per_pent, "<<<")
+            print(">>> Perimeter of pentagon :  " + per_pent + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -579,8 +677,13 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             per_hex = side_length*6
+            per_hex = str(per_hex)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of Hexagon :  " + per_hex + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of Hexagon : ", per_hex, "<<<")
+            print(">>> Perimeter of Hexagon :  " + per_hex + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -602,8 +705,13 @@ def process():
         if side_length.isnumeric():
             side_length = int(side_length)
             vol_cube = side_length**3
+            vol_cube = str(vol_cube)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of cube :  " + vol_cube + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of cube : ", vol_cube, "<<<")
+            print(">>> Volume of cube :  " + vol_cube + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -626,8 +734,13 @@ def process():
             breadth = int(breadth)
             height = int(height)
             vol_cuboid = length*breadth*height
+            vol_cuboid = str(vol_cuboid)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of cuboid :  " + vol_cuboid + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of cuboid : ", vol_cuboid, "<<<")
+            print(">>> Volume of cuboid :  " + vol_cuboid + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -648,8 +761,13 @@ def process():
             pi = 3.14
             vol_ball = (4/3)*pi*(radius**3)
             vol_ball = round(vol_ball, 2)
+            vol_ball = str(vol_ball)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of ball :  " + vol_ball + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of ball : ", vol_ball, "<<<")
+            print(">>> Volume of ball :  " + vol_ball + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -669,8 +787,13 @@ def process():
             side_length = int(side_length)
             vol_tetra = side_length**3/((2**0.5)*6)
             vol_tetra = round(vol_tetra, 2)
+            vol_tetra = str(vol_tetra)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of tetrahedron :  " + vol_tetra + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of tetrahedron : ", vol_tetra, "<<<")
+            print(">>> Volume of tetrahedron :  " + vol_tetra + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -694,8 +817,13 @@ def process():
             height = int(height)
             vol_pyr = (1/3)*((length*width)*height)
             vol_pyr = round(vol_pyr, 2)
+            vol_pyr = str(vol_pyr)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of pyramid :  " + vol_pyr + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of pyramid : ", vol_pyr, "<<<")
+            print(">>> Volume of pyramid :  " + vol_pyr + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -718,8 +846,13 @@ def process():
             pi = 3.14
             vol_cyl = pi*(radius**2)*height
             vol_cyl = round(vol_cyl, 2)
+            vol_cyl = str(vol_cyl)
+            with open(history_file, 'r') as historyFileR:
+                readF = historyFileR.read()
+            with open(history_file, 'w') as historyFileW:
+                historyFileW.write(readF + "\n" + current_time + " [Volume of cylinder :  " + vol_cyl + "]")
             print("---------------------------------------------------------")
-            print(">>> Volume of cylinder : ", vol_cyl, "<<<")
+            print(">>> Volume of cylinder :  " + vol_cyl + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
