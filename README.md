@@ -18,6 +18,7 @@ If you have python installed in your computer you can run the file,
 <p align="center" style="color:#F9C669"><font size="3" face="CaskaydiaCove NF">Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon. Always run the python🐍 code or the .exe📄 from the releases✅ for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!). This calculator doesn't currently show a unit for measuring.</font></p>
 
 ---
+If you want to clear the history just open ```history.txt``` and clear it.
 
 To clone repo run 👇
 ```
@@ -62,6 +63,7 @@ git clone "https://github.com/savithu-s3/calculator.git"
 2. <font size="4">Automatically clear screen on a new function</font>
 3. <font size="4">Exit from anywhere</font>
 4. <font size="4">Can only input numerical values</font>
+5. <font size="4">Save History</font>
 
 <font face="CaskaydiaCove NF">More features coming soon...!</font>
 
@@ -93,5 +95,3 @@ git clone "https://github.com/savithu-s3/calculator.git"
   - >[Telegram 🚀](https://t.me/savithu_s3)
 
   - >[Discord 😶](https://discord.com/users/852854232435916800)
-
-
