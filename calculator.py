@@ -3,12 +3,21 @@ import os
 
 history_file = "history.txt"
 current_time = time.asctime()
+clearHis = ["clshis","CLSHIS","Clshis","cLshis","CLShis","ClsHis","CLsHIs","clsHIS","clsHis"]
 
 def clear_terminal():
     if os.name == "nt":
         os.system("cls")
     else:
         os.system("clear")
+
+def clear_history():
+    with open(history_file, 'w') as clearFile:
+        clearFile.write("")
+        print("History file cleared...!")
+        print("Wait 2 seconds..")
+        time.sleep(2)
+        process()
 
 def process():
     clear_terminal()
@@ -36,12 +45,13 @@ def process():
       Perimeter & Circumference = 2
       Volume = 3
     =================================
-
+    
+    Clear History = clshis
     Exit = Exit
 
     """)
 
-    type = input("What type of calculator do you need (Enter a number from above) : ")
+    type = input("What type of calculator do you need (Enter a number from above) or enter the command : ")
 
     yes = ["Yes","yes","Y","y"]
 
@@ -631,9 +641,9 @@ def process():
             with open(history_file, 'r') as historyFileR:
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
-                historyFileW.write(readF + "\n" + current_time + " [Perimeter of Triangle :  " + per_tri + "]")
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of triangle :  " + per_tri + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of Triangle :  " + per_tri + " <<<")
+            print(">>> Perimeter of triangle :  " + per_tri + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -681,9 +691,9 @@ def process():
             with open(history_file, 'r') as historyFileR:
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
-                historyFileW.write(readF + "\n" + current_time + " [Perimeter of Hexagon :  " + per_hex + "]")
+                historyFileW.write(readF + "\n" + current_time + " [Perimeter of hexagon :  " + per_hex + "]")
             print("---------------------------------------------------------")
-            print(">>> Perimeter of Hexagon :  " + per_hex + " <<<")
+            print(">>> Perimeter of hexagon :  " + per_hex + " <<<")
             print("---------------------------------------------------------")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
@@ -890,7 +900,8 @@ def process():
         elif (area_sel == "Exit" or area_sel == "exit" or area_sel == "EXIT" or area_sel == "eXIT"):
             exit_process()
         else:
-            print("You entered an incorrect value")
+            print("You entered an incorrect value!!!")
+            time.sleep(1)
             area()
 
     # PERIMETER FUNCTION
@@ -932,7 +943,8 @@ def process():
         elif (perimeter_sel == "Exit" or perimeter_sel == "exit" or perimeter_sel == "EXIT" or perimeter_sel == "eXIT"):
             exit_process()
         else:
-            print("You entered an incorrect value")
+            print("You entered an incorrect value!!!")
+            time.sleep(2)
             perimeter()
 
     # VOLUME FUNCTION
@@ -971,7 +983,8 @@ def process():
         elif (volume_sel == "Exit" or volume_sel == "exit" or volume_sel == "EXIT" or volume_sel == "eXIT"):
             exit_process()
         else:
-            print("You entered an incorrect value")
+            print("You entered an incorrect value!!!")
+            time.sleep(2)
             volume()
 
     if (type == "1"):
@@ -982,8 +995,10 @@ def process():
         volume()
     elif (type == "Exit" or type == "exit" or type == "EXIT" or type == "eXIT"):
         exit_process()
+    elif (type in clearHis):
+        clear_history()
     else:
-        print("You entered an incorrect value")
+        print("You entered an incorrect value!!!")
         time.sleep(2)
         process()
 
