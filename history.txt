@@ -1,0 +1,9 @@
+
+Sat Aug 13 20:37:01 2022 [Area of square :  25]
+Sat Aug 13 20:37:40 2022 [Area of square :  25]
+Sat Aug 13 20:37:56 2022 [Area of square :  1]
+Sat Aug 13 20:38:15 2022 [Area of square :  1]
+Sat Aug 13 20:39:08 2022 [Area of square :  1]
+Sat Aug 13 20:41:20 2022 [Volume of ball :  523.33]
+Sat Aug 13 20:49:16 2022 [Area of rectangle :  25]
+Sat Aug 13 20:49:16 2022 [Area of square :  25]

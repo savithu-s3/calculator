@@ -22,15 +22,15 @@ def clear_history():
 def process():
     clear_terminal()
     print("""
-     _     _ _                     ______      _ 
-    | |   | | |_                  / _____)    | |
-    | |   | | | |_   ____ ____   | /      ____| |
-    | |   | | |  _) / ___) _  |  | |     / _  | |
-    | |___| | | |__| |  ( ( | |  | \____( ( | | |
-    \_______|_|\___)_|   \_||_|   \______)_||_|_|
-                                    BY SAVITHU_S3""")
+    \u001b[31;1m _     _ _                  \u001b[32;1m   ______      _ 
+    \u001b[31;1m| |   | | |_                \u001b[32;1m  / _____)    | |
+    \u001b[31;1m| |   | | | |_   ____ ____  \u001b[32;1m | /      ____| |
+    \u001b[31;1m| |   | | |  _) / ___) _  | \u001b[32;1m | |     / _  | |
+    \u001b[31;1m| |___| | | |__| |  ( ( | | \u001b[32;1m | \____( ( | | |
+    \u001b[31;1m\_______|_|\___)_|   \_||_| \u001b[32;1m  \______)_||_|_|
+    \u001b[31;1m                                \u001b[33;1mBY SAVITHU_S3\u001b[0m""")
     print("")
-    print("Ultra Cal🧮 - Version 1.6")
+    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 1.9\u001b[0m")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
@@ -40,14 +40,14 @@ def process():
     print("-------------------------------------------------")
 
     print("""
-    =================================
+    \u001b[34m=================================\u001b[0m
       Area = 1
       Perimeter & Circumference = 2
       Volume = 3
-    =================================
+    \u001b[34m=================================\u001b[0m
     
-    Clear History = clshis
-    Exit = Exit
+    Clear History = \u001b[33mclshis\u001b[0m
+    Exit = \u001b[31mExit\u001b[0m
 
     """)
 
@@ -81,9 +81,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of square :  " + sq_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of square :  " + sq_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of square :  \u001b[33;1m" + sq_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(sq_ar)
@@ -109,9 +109,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of rectangle :  " + rec_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of rectangle :  " + rec_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of rectangle :  \u001b[33;1m" + rec_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(rec_ar)
@@ -138,9 +138,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + cir_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of circle :  " + cir_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of circle :  \u001b[33;1m" + cir_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cir_ar)
@@ -165,9 +165,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of triangle :  " + tri_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of triangle :  " + tri_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of triangle :  \u001b[33;1m" + tri_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(tri_ar)
@@ -191,9 +191,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of hexagon :  " + hex_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of hexagon :  " + hex_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of hexagon :  \u001b[33;1m" + hex_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(hex_ar)
@@ -217,9 +217,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of pentagon :  " + pen_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of pentagon :  " + pen_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of pentagon :  \u001b[33;1m" + pen_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(pen_ar)
@@ -247,9 +247,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of oval :  " + oval_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of oval :  " + oval_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of oval :  \u001b[33;1m" + oval_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(oval_ar)
@@ -265,7 +265,7 @@ def process():
     def area_shapes():
         clear_terminal()
         print("""
-        =================================
+        \u001b[34m=================================\u001b[0m
         ----Area Of Shapes----
         
         Square = 1
@@ -275,7 +275,7 @@ def process():
         Oval = 5
         Regualar Hexagon = 6
         Regualar Pentagon = 7
-        =================================
+        \u001b[34m=================================\u001b[0m
         
         Exit = Exit
 
@@ -317,9 +317,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of cube :  " + cube_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of cube :  " + cube_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of cube :  \u001b[33;1m" + cube_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cube_ar)
@@ -347,9 +347,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of cuboid :  " + cuboid_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of cuboid :  " + cuboid_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of cuboid :  \u001b[33;1m" + cuboid_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cuboid_ar)
@@ -376,9 +376,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of ball :  " + ball_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of ball :  " + ball_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of ball :  \u001b[33;1m" + ball_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(ball_ar)
@@ -409,9 +409,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of cylinder :  " + cylinder_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of cylinder :  " + cylinder_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of cylinder :  \u001b[33;1m" + cylinder_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(cylinder_ar)
@@ -437,9 +437,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of tetrahedron :  " + tetra_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of tetrahedron :  " + tetra_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of tetrahedron :  \u001b[33;1m" + tetra_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(tetra_ar)
@@ -465,9 +465,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Area of pyramid :  " + pyr_ar + "]")
-            print("---------------------------------------------------------")
-            print(">>> Area of pyramid :  " + pyr_ar + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Area of pyramid :  \u001b[33;1m" + pyr_ar + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(pyr_ar)
@@ -483,7 +483,7 @@ def process():
     def area_solids():
         clear_terminal()
         print("""
-        =================================
+        \u001b[34m=================================\u001b[0m
         ----Area Of Solids----
         
         Cube = 1
@@ -492,7 +492,7 @@ def process():
         Cylinder = 4
         Tetrahedron = 5
         Pyramid = 6
-        =================================
+        \u001b[34m=================================\u001b[0m
         
         Exit = Exit
 
@@ -532,9 +532,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Perimeter of square :  " + per_sq + "]")
-            print("---------------------------------------------------------")
-            print(">>> Perimeter of square :  " + per_sq + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Perimeter of square :  \u001b[33;1m" + per_sq + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_sq)
@@ -559,9 +559,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Perimeter of rectangle :  " + per_rec + "]")
-            print("---------------------------------------------------------")
-            print(">>> Perimeter of rectangle :  " + per_rec + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Perimeter of rectangle :  \u001b[33;1m" + per_rec + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_rec)
@@ -588,9 +588,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Circumference of circle :  " + per_circ + "]")
-            print("---------------------------------------------------------")
-            print(">>> Circumference of circle :  " + per_circ + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Circumference of circle :  \u001b[33;1m" + per_circ + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_circ)
@@ -617,9 +617,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Circumference of oval :  " + per_oval + "]")
-            print("---------------------------------------------------------")
-            print(">>> Circumference of oval :  " + per_oval + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Circumference of oval :  \u001b[33;1m" + per_oval + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_oval)
@@ -642,9 +642,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Perimeter of triangle :  " + per_tri + "]")
-            print("---------------------------------------------------------")
-            print(">>> Perimeter of triangle :  " + per_tri + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Perimeter of triangle :  \u001b[33;1m" + per_tri + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_tri)
@@ -667,9 +667,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Perimeter of pentagon :  " + per_pent + "]")
-            print("---------------------------------------------------------")
-            print(">>> Perimeter of pentagon :  " + per_pent + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Perimeter of pentagon :  \u001b[33;1m" + per_pent + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_pent)
@@ -692,9 +692,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Perimeter of hexagon :  " + per_hex + "]")
-            print("---------------------------------------------------------")
-            print(">>> Perimeter of hexagon :  " + per_hex + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Perimeter of hexagon :  \u001b[33;1m" + per_hex + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(per_hex)
@@ -720,9 +720,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of cube :  " + vol_cube + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of cube :  " + vol_cube + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of cube :  \u001b[33;1m" + vol_cube + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cube)
@@ -749,9 +749,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of cuboid :  " + vol_cuboid + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of cuboid :  " + vol_cuboid + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of cuboid :  \u001b[33;1m" + vol_cuboid + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cuboid)
@@ -776,9 +776,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of ball :  " + vol_ball + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of ball :  " + vol_ball + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of ball :  \u001b[33;1m" + vol_ball + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_ball)
@@ -802,9 +802,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of tetrahedron :  " + vol_tetra + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of tetrahedron :  " + vol_tetra + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of tetrahedron :  \u001b[33;1m" + vol_tetra + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_tetra)
@@ -832,9 +832,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of pyramid :  " + vol_pyr + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of pyramid :  " + vol_pyr + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of pyramid :  \u001b[33;1m" + vol_pyr + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_pyr)
@@ -861,9 +861,9 @@ def process():
                 readF = historyFileR.read()
             with open(history_file, 'w') as historyFileW:
                 historyFileW.write(readF + "\n" + current_time + " [Volume of cylinder :  " + vol_cyl + "]")
-            print("---------------------------------------------------------")
-            print(">>> Volume of cylinder :  " + vol_cyl + " <<<")
-            print("---------------------------------------------------------")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
+            print(">>> Volume of cylinder :  \u001b[33;1m" + vol_cyl + "\u001b[0m <<<")
+            print("\u001b[34m---------------------------------------------------------\u001b[0m")
             copy = input("Do you need to copy the answer : ")
             if copy in yes:
                 pyperclip.copy(vol_cyl)
@@ -880,12 +880,12 @@ def process():
     def area():
         clear_terminal()
         print("""
-        =================================
+        \u001b[34m=================================\u001b[0m
         ----Area----
         
         Shapes = 1
         Solids = 2
-        =================================
+        \u001b[34m=================================\u001b[0m
 
         Exit = Exit
 
@@ -908,7 +908,7 @@ def process():
     def perimeter():
         clear_terminal()
         print("""
-        =================================
+        \u001b[34m=================================\u001b[0m
         ----Perimeter & Circumference----
         
         Square = 1
@@ -918,7 +918,7 @@ def process():
         Equilateral Triangle = 5
         Regular Pentagon = 6
         Regular Hexagon = 7
-        =================================
+        \u001b[34m=================================\u001b[0m
         
         Exit = Exit
 
@@ -951,7 +951,7 @@ def process():
     def volume():
         clear_terminal()
         print("""
-        =================================
+        \u001b[34m=================================\u001b[0m
         ----Volume----
         
         Cube = 1
@@ -960,7 +960,7 @@ def process():
         Tetrahedron = 4
         Pyramid = 5
         Cylinder = 6
-        =================================
+        \u001b[34m=================================\u001b[0m
         
         Exit = Exit
         

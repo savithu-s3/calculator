@@ -63,7 +63,11 @@ git clone "https://github.com/savithu-s3/calculator.git"
 2. <font size="4">Automatically clear screen on a new function</font>
 3. <font size="4">Exit from anywhere</font>
 4. <font size="4">Can only input numerical values</font>
-5. <font size="4">Save History</font>
+5. <font size="4">Saves history automatically</font>
+6. <font size="4">Clear history by a command</font>
+7. <font size="4">Colorful interface</font>
+8. <font size="4">Can copy answer after calculating</font>
+9. <font size="4">Prints the current version</font>
 
 <font face="CaskaydiaCove NF">More features coming soon...!</font>
 
