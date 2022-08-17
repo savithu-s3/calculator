@@ -1,9 +1,11 @@
 <h1 align="center" style="color:#F9C669"><font size="8" face="CaskaydiaCove NF">Ultra Cal🧮</font></h1>
 
 <p align="center">
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/savithu-s3/calculator">
-<img alt="GitHub" src="https://img.shields.io/github/license/savithu-s3/calculator">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/savithu-s3/calculator?style=social">
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/savithu-s3/calculator?logo=github&color=red">
+<img alt="GitHub" src="https://img.shields.io/github/license/savithu-s3/calculator?logo=github&color=orange">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/savithu-s3/calculator?logo=github&color=yellow">
+<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/savithu-s3/calculator/main?logo=github&color=brightgreen">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/savithu-s3/calculator?logo=github&color=blue">
 </p>
 
 ---
@@ -107,7 +109,7 @@ clshis
   - [My Profile](https://github.com/savithu-s3)
   - [Calculator repo](https://github.com/savithu-s3/calculator)
 
-- ### Social Media 👥
+# <font style="color:#F9C669" face="CaskaydiaCove NF">Social Media</font>👥
 
 <p align="center">
 <a href="https://github.com/savithu-s3"><img src="https://img.shields.io/static/v1?logo=github&label=&message=Github&color=36393f&style=flat-square" alt="Github"></a>
