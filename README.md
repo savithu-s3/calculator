@@ -15,17 +15,19 @@
 Ultra cal provides you the ability to calculate the area of [shapes](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) or [solids](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃), [perimeter](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of shapes and also the [volume](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of solids. Run,
 >[calculator.exe](https://github.com/savithu-s3/calculator/blob/main/calculator.exe) 
 
-👆Click above to open github repo👆
+👆Click above to open github repo file👆
 
 to run the program in windows diretly.
 
 If you have python installed in your computer you can run the file,
 >[calculator.py](https://github.com/savithu-s3/calculator/blob/main/calculator.py)
 
-👆Click above to open github repo👆
+👆Click above to open github repo file👆
+
+The GUI version of the [Ultra_Cal](https://github.com/savithu-s3/calculator) is in develop now. It will be released in September or on last days of august. It's not made from Python it is made from Java.
 
 ---
-<p align="center" style="color:#F9C669"><font size="3" face="CaskaydiaCove NF">Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️. The GUI version is to be developed soon. Always run the python🐍 code or the .exe📄 from the releases✅ for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!). This calculator doesn't currently show a unit for measuring.</font></p>
+<p align="center" style="color:#F9C669"><font size="3" face="CaskaydiaCove NF">Note : This program is currently in developmet⚙️. If you find any issues post an issue on the github repo!👍. This program is a console based one⌨️.Always run the python🐍 code or the .exe📄 from the releases✅ for improved stability. New versions are released in the first half of a month📅. If you want to try out what are the upcoming features download the python🐍 file from the repo(Not from the releases!). This calculator doesn't currently show a unit for measuring.</font></p>
 
 ---
 If you want to clear the history just open ```history.txt``` and clear it or type ```clshis``` and hit enter in main menu.
