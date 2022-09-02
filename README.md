@@ -45,6 +45,8 @@ git clone "https://github.com/savithu-s3/calculator.git"
     - Square
     - Rectangle
     - Circle
+      - Full Circle
+      - Semicircle
     - Triangle
     - Hexagon
     - Pentagon

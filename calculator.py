@@ -30,7 +30,7 @@ def process():
     \u001b[31;1m\_______|_|\___)_|   \_||_| \u001b[32;1m  \______)_||_|_|
     \u001b[31;1m                                \u001b[33;1mBY SAVITHU_S3\u001b[0m""")
     print("")
-    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 1.9\u001b[0m")
+    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.0\u001b[0m")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
@@ -125,31 +125,71 @@ def process():
     # 3 Circle
     def circle_area():
         clear_terminal()
-        radius = input("Enter radius : ")
-        if radius.isnumeric():
-            radius = int(radius)
-            mul_o_sev = radius%7
-            pi = 3.14
-            if (mul_o_sev == 0):
-                pi = 22/7
-            cir_ar = pi*radius*radius
-            cir_ar = str(cir_ar)
-            with open(history_file, 'r') as historyFileR:
-                readF = historyFileR.read()
-            with open(history_file, 'w') as historyFileW:
-                historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + cir_ar + "]")
-            print("\u001b[34m---------------------------------------------------------\u001b[0m")
-            print(">>> Area of circle :  \u001b[33;1m" + cir_ar + "\u001b[0m <<<")
-            print("\u001b[34m---------------------------------------------------------\u001b[0m")
-            copy = input("Do you need to copy the answer : ")
-            if copy in yes:
-                pyperclip.copy(cir_ar)
-                print("Answer Copied...!!!")
+        print("""
+        \u001b[34m=================================\u001b[0m
+          Full Circle = 1
+          Semicircle = 2
+        \u001b[34m=================================\u001b[0m
+    
+        Clear History = \u001b[33mclshis\u001b[0m
+        Exit = \u001b[31mExit\u001b[0m
+
+        """)
+        circle_type = input("Enter the type of circle : ")
+        if circle_type == "1":
+            clear_terminal()
+            radius = input("Enter radius : ")
+            if radius.isnumeric():
+                radius = int(radius)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                cir_ar = pi*radius*radius
+                cir_ar = str(cir_ar)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + cir_ar + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Area of circle :  \u001b[33;1m" + cir_ar + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy(cir_ar)
+                    print("Answer Copied...!!!")
+                else:
+                    jump_process()
             else:
-                jump_process()
-        else:
-            print("Please enter only numbers!")
-            circle_area()
+                print("Please enter only numbers!")
+                circle_area()
+        elif circle_type == "2":
+            clear_terminal()
+            radius = input("Enter radius : ")
+            if radius.isnumeric():
+                radius = int(radius)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                semicir_ar = (pi*radius*radius)/2
+                semicir_ar = str(semicir_ar)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + semicir_ar + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Area of semicircle :  \u001b[33;1m" + semicir_ar + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy(semicir_ar)
+                    print("Answer Copied...!!!")
+                else:
+                    jump_process()
+            else:
+                print("Please enter only numbers!")
+                circle_area()
 
     # 4 Triangle
     def triangle_area():
