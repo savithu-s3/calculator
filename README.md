@@ -96,6 +96,17 @@ exit
 clshis
 ```
 
+# <font style="color:#F9C669" face="CaskaydiaCove NF">Errors</font>❌
+
+- ```
+  No module named 'pyperclip'
+  ```
+  - Fix - Run ```pip install pyperclip```
+- ```
+  No such file or directory: 'history.txt'
+  ```
+  - Fix - Create a file named ```history.txt``` in the directory
+
 # <font style="color:#F9C669" face="CaskaydiaCove NF">Links</font>👇
 
 - Python File (repo)👇

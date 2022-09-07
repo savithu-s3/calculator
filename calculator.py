@@ -1,5 +1,6 @@
 import time
 import os
+import pyperclip
 
 history_file = "history.txt"
 current_time = time.asctime()
@@ -30,7 +31,7 @@ def process():
     \u001b[31;1m\_______|_|\___)_|   \_||_| \u001b[32;1m  \______)_||_|_|
     \u001b[31;1m                                \u001b[33;1mBY SAVITHU_S3\u001b[0m""")
     print("")
-    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.0\u001b[0m")
+    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.1\u001b[0m")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
