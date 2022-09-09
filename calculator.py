@@ -31,7 +31,7 @@ def process():
     \u001b[31;1m\_______|_|\___)_|   \_||_| \u001b[32;1m  \______)_||_|_|
     \u001b[31;1m                                \u001b[33;1mBY SAVITHU_S3\u001b[0m""")
     print("")
-    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.1\u001b[0m")
+    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.2\u001b[0m")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
@@ -89,6 +89,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(sq_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -117,6 +118,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(rec_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -130,6 +132,7 @@ def process():
         \u001b[34m=================================\u001b[0m
           Full Circle = 1
           Semicircle = 2
+          Quarter circle = 3
         \u001b[34m=================================\u001b[0m
     
         Clear History = \u001b[33mclshis\u001b[0m
@@ -159,6 +162,7 @@ def process():
                 if copy in yes:
                     pyperclip.copy(cir_ar)
                     print("Answer Copied...!!!")
+                    jump_process()
                 else:
                     jump_process()
             else:
@@ -178,7 +182,7 @@ def process():
                 with open(history_file, 'r') as historyFileR:
                     readF = historyFileR.read()
                 with open(history_file, 'w') as historyFileW:
-                    historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + semicir_ar + "]")
+                    historyFileW.write(readF + "\n" + current_time + " [Area of semicircle :  " + semicir_ar + "]")
                 print("\u001b[34m---------------------------------------------------------\u001b[0m")
                 print(">>> Area of semicircle :  \u001b[33;1m" + semicir_ar + "\u001b[0m <<<")
                 print("\u001b[34m---------------------------------------------------------\u001b[0m")
@@ -186,6 +190,35 @@ def process():
                 if copy in yes:
                     pyperclip.copy(semicir_ar)
                     print("Answer Copied...!!!")
+                    jump_process()
+                else:
+                    jump_process()
+            else:
+                print("Please enter only numbers!")
+                circle_area()
+        elif circle_type == "3":
+            clear_terminal()
+            radius = input("Enter radius : ")
+            if radius.isnumeric():
+                radius = int(radius)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                quartcir_ar = (pi*radius*radius)/4
+                quartcir_ar = str(quartcir_ar)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Area of quarter circle :  " + quartcir_ar + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Area of semicircle :  \u001b[33;1m" + quartcir_ar + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy(quartcir_ar)
+                    print("Answer Copied...!!!")
+                    jump_process()
                 else:
                     jump_process()
             else:
@@ -213,6 +246,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(tri_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -239,6 +273,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(hex_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -265,6 +300,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(pen_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -295,6 +331,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(oval_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -365,6 +402,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(cube_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -395,6 +433,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(cuboid_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -424,6 +463,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(ball_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -457,6 +497,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(cylinder_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -485,6 +526,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(tetra_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -513,6 +555,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(pyr_ar)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -580,6 +623,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_sq)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -607,6 +651,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_rec)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -636,6 +681,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_circ)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -665,6 +711,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_oval)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -690,6 +737,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_tri)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -715,6 +763,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_pent)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -740,6 +789,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(per_hex)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -768,6 +818,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_cube)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -797,6 +848,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_cuboid)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -824,6 +876,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_ball)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -850,6 +903,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_tetra)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -880,6 +934,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_pyr)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
@@ -909,6 +964,7 @@ def process():
             if copy in yes:
                 pyperclip.copy(vol_cyl)
                 print("Answer Copied...!!!")
+                jump_process()
             else:
                 jump_process()
         else:
