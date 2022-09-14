@@ -12,7 +12,10 @@
 
 ## Calculate **_Volume_, _Area_ and _Perimeter_**
 
-Ultra cal provides you the ability to calculate the area of [shapes](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) or [solids](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃), [perimeter](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of shapes and also the [volume](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of solids. Run,
+<p align="center"><img alt="Ultra_Cal" src="https://github.com/savithu-s3/calculator/blob/main/ultra_cal.png">
+</p>
+
+Ultra cal is a calculator made from python to calculate the area of [shapes](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) or [solids](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃), [perimeter](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of shapes and also the [volume](#font-stylecolorf9c669-facecaskaydiacove-nffeaturesfont📃) of solids. Run,
 >[calculator.exe](https://github.com/savithu-s3/calculator/blob/main/calculator.exe) 
 
 👆Click above to open github repo file👆
