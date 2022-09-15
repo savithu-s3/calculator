@@ -224,6 +224,10 @@ def process():
             else:
                 print("Please enter only numbers!")
                 circle_area()
+        else:
+            print("Enter a correct value...!")
+            time.sleep(3)
+            circle_area()
 
     # 4 Triangle
     def triangle_area():
@@ -661,31 +665,77 @@ def process():
     # 3 Circle
     def circle_perimeter():
         clear_terminal()
-        radius = input("Enter the radius : ")
-        if radius.isnumeric():
-            radius = int(radius)
-            mul_o_sev = radius%7
-            pi = 3.14
-            if (mul_o_sev == 0):
-                pi = 22/7
-            per_circ = (2*pi*radius)
-            per_circ = str(per_circ)
-            with open(history_file, 'r') as historyFileR:
-                readF = historyFileR.read()
-            with open(history_file, 'w') as historyFileW:
-                historyFileW.write(readF + "\n" + current_time + " [Circumference of circle :  " + per_circ + "]")
-            print("\u001b[34m---------------------------------------------------------\u001b[0m")
-            print(">>> Circumference of circle :  \u001b[33;1m" + per_circ + "\u001b[0m <<<")
-            print("\u001b[34m---------------------------------------------------------\u001b[0m")
-            copy = input("Do you need to copy the answer : ")
-            if copy in yes:
-                pyperclip.copy(per_circ)
-                print("Answer Copied...!!!")
-                jump_process()
+        print("""
+        \u001b[34m=================================\u001b[0m
+          Full Circle = 1
+          Semicircle = 2
+        \u001b[34m=================================\u001b[0m
+    
+        Clear History = \u001b[33mclshis\u001b[0m
+        Exit = \u001b[31mExit\u001b[0m
+
+        """)
+        circle_type = input("Enter the type of circle : ")
+        if circle_type == "1":
+            radius = input("Enter the radius : ")
+            if radius.isnumeric():
+                radius = int(radius)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                per_circ = (2*pi*radius)
+                per_circ = str(per_circ)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Circumference of circle :  " + per_circ + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Circumference of circle :  \u001b[33;1m" + per_circ + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy(per_circ)
+                    print("Answer Copied...!!!")
+                    jump_process()
+                else:
+                    jump_process()
             else:
-                jump_process()
+                print("Please enter only numbers!")
+                circle_perimeter()
+        elif circle_type == "2":
+            radius = input("Enter the radius : ")
+            if radius.isnumeric():
+                radius = int(radius)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                arc_circ = (pi*radius)
+                full_circ = arc_circ + (2*radius)
+                full_circ = str(full_circ)
+                arc_circ = str(arc_circ)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Perimeter of semicircle :  " + full_circ + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Arc length of semicircle :  \u001b[33;1m" + arc_circ + "\u001b[0m <<<")
+                print(">>> Perimeter of semicircle : \u001b[33;1m" + full_circ + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy("Arc Length : " + arc_circ + " , Perimeter : " + full_circ)
+                    print("Answer Copied...!!!")
+                    jump_process()
+                else:
+                    jump_process()
+            else:
+                print("Please enter only numbers!")
+                circle_perimeter()
         else:
-            print("Please enter only numbers!")
+            print("Enter a correct value...!")
+            time.sleep(3)
             circle_perimeter()
 
     # 4 Oval

@@ -66,6 +66,8 @@ git clone "https://github.com/savithu-s3/calculator.git"
   - Square
   - Rectangle
   - Circle
+    - Full Circle
+    - Semicircle
   - Oval
   - Equilateral Triangle
   - Regular Pentagon
