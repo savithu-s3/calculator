@@ -68,6 +68,7 @@ git clone "https://github.com/savithu-s3/calculator.git"
   - Circle
     - Full Circle
     - Semicircle
+    - Quarter Circle
   - Oval
   - Equilateral Triangle
   - Regular Pentagon
