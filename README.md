@@ -51,6 +51,7 @@ git clone "https://github.com/savithu-s3/calculator.git"
       - Full Circle
       - Semicircle
       - Quarter Circle
+      - Custom angle
     - Triangle
     - Hexagon
     - Pentagon
