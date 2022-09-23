@@ -133,6 +133,7 @@ def process():
           Full Circle = 1
           Semicircle = 2
           Quarter circle = 3
+          Custom Angled Circle = 4
         \u001b[34m=================================\u001b[0m
     
         Clear History = \u001b[33mclshis\u001b[0m
@@ -217,6 +218,36 @@ def process():
                 copy = input("Do you need to copy the answer : ")
                 if copy in yes:
                     pyperclip.copy(quartcir_ar)
+                    print("Answer Copied...!!!")
+                    jump_process()
+                else:
+                    jump_process()
+            else:
+                print("Please enter only numbers!")
+                circle_area()
+        elif circle_type == "4":
+            clear_terminal()
+            radius = input("Enter radius : ")
+            angle = input("Enter the angle of circle : ")
+            if (radius.isnumeric()) and (angle.isnumeric()):
+                radius = int(radius)
+                angle = int(angle)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                cir_ar = (angle/360)*(pi*radius*radius)
+                cir_ar = str(cir_ar)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Area of circle :  " + cir_ar + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Area of circle :  \u001b[33;1m" + cir_ar + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy(cir_ar)
                     print("Answer Copied...!!!")
                     jump_process()
                 else:
