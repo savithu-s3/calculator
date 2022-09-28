@@ -1,4 +1,4 @@
-import time
+﻿import time
 import os
 import pyperclip
 
@@ -31,7 +31,7 @@ def process():
     \u001b[31;1m\_______|_|\___)_|   \_||_| \u001b[32;1m  \______)_||_|_|
     \u001b[31;1m                                \u001b[33;1mBY SAVITHU_S3\u001b[0m""")
     print("")
-    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.2\u001b[0m")
+    print("\u001b[31;1mUltra \u001b[32;1mCal\u001b[0m🧮 - \u001b[34;1mVersion 2.6\u001b[0m")
     print("-------------------------------------------------")
     print("|                                               |")
     print(">>>       https://github.com/savithu-s3       <<<")
@@ -701,6 +701,7 @@ def process():
           Full Circle = 1
           Semicircle = 2
           Quarter Circle = 3
+          Custom Angled Circle = 4
         \u001b[34m=================================\u001b[0m
     
         Clear History = \u001b[33mclshis\u001b[0m
@@ -798,6 +799,41 @@ def process():
             else:
                 print("Please enter only numbers!")
                 circle_perimeter()
+                circle_area()
+        elif circle_type == "4":
+            clear_terminal()
+            radius = input("Enter the radius : ")
+            angle = input("Enter the angle of circle : ")            
+            if radius.isnumeric() and (angle.isnumeric()):
+                radius = int(radius)
+                angle = int(angle)
+                mul_o_sev = radius%7
+                pi = 3.14
+                if (mul_o_sev == 0):
+                    pi = 22/7
+                arc_circ = (angle/360)*(2*pi*radius)
+                full_circ = arc_circ + (2*radius)
+                full_circ = str(full_circ)
+                arc_circ = str(arc_circ)
+                with open(history_file, 'r') as historyFileR:
+                    readF = historyFileR.read()
+                with open(history_file, 'w') as historyFileW:
+                    historyFileW.write(readF + "\n" + current_time + " [Perimeter of " + str(angle) + "angled circle :  " + full_circ + "]")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                print(">>> Arc length of " + str(angle) + "angled circle :  \u001b[33;1m" + arc_circ + "\u001b[0m <<<")
+                print(">>> Perimeter of " + str(angle) + "angled circle : \u001b[33;1m" + full_circ + "\u001b[0m <<<")
+                print("\u001b[34m---------------------------------------------------------\u001b[0m")
+                copy = input("Do you need to copy the answer : ")
+                if copy in yes:
+                    pyperclip.copy("Arc Length : " + arc_circ + " , Perimeter : " + full_circ)
+                    print("Answer Copied...!!!")
+                    jump_process()
+                else:
+                    jump_process()
+            else:
+                print("Please enter only numbers!")
+                circle_perimeter()
+
         else:
             print("Enter a correct value...!")
             time.sleep(3)
